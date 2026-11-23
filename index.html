@@ -1,0 +1,87 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore sequências crescentes, pares, ímpares, múltiplos e quadrados perfeitos em intervalos ajustáveis.">
+    <title>
+      Rota dos Números
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js">
+    </script>
+  </head>
+  <body>
+    <header class="topo">
+      <a class="marca" href="index.html">
+        PROJETO
+        <span>
+          ·
+        </span>
+        Rota
+      </a>
+      <span class="selo">
+        DEMONSTRAÇÃO LOCAL
+      </span>
+    </header>
+    <main>
+      <section class="abertura">
+        <p class="sobretitulo">
+          ESTUDO INTERATIVO · JAVASCRIPT
+        </p>
+        <h1>
+          Rota dos Números
+        </h1>
+        <p class="introducao">
+          Explore sequências crescentes, pares, ímpares, múltiplos e quadrados perfeitos em intervalos ajustáveis.
+        </p>
+      </section>
+      <section class="painel">
+        <form id="formulario" class="grade">
+          <div class="campo">
+            <label for="tipo">
+              Padrão
+            </label>
+            <select id="tipo">
+              <option value="todos">
+                Contagem crescente
+              </option>
+              <option value="pares">
+                Pares
+              </option>
+              <option value="impares">
+                Ímpares
+              </option>
+              <option value="multiplos">
+                Múltiplos de cinco
+              </option>
+              <option value="quadrados">
+                Quadrados perfeitos
+              </option>
+              <option value="volta">
+                Contagem decrescente
+              </option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="limite">
+              Limite (até 100)
+            </label>
+            <input id="limite" type="number" min="1" max="100" value="20">
+          </div>
+          <div class="acoes">
+            <button>
+              Explorar padrão
+            </button>
+          </div>
+        </form>
+        <pre id="resultado" class="resultado" aria-live="polite">
+        </pre>
+      </section>
+    </main>
+    <footer>
+      Projeto demonstrativo independente · dados fictícios · sem serviços externos
+    </footer>
+  </body>
+</html>
+
